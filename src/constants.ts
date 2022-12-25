@@ -1,1 +1,1 @@
-export const userURL = "http://localhost:8000/api/users"
+export const userURL = "http://git-api-rest-back.vercel.app/api/users"

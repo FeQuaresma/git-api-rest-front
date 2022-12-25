@@ -7,7 +7,6 @@ function Home() {
   const [username, setUsername] = useState("");
   const [error, setError] = useState(false);
   const [page, setPage] = useState(0);
-  console.log(`${userURL}?since=${page}&per_page=10`);
   const init_component = useCallback(() => {
     fetch(`${userURL}?since=${page}&per_page=10`)
       .then((result) => result.json())
