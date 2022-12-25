@@ -2,6 +2,7 @@ import { useCallback, useEffect, useState } from "react";
 import { userURL } from "../../constants";
 import useQuery from "../../hooks/useQuery";
 import moment from "moment";
+import { Link } from "react-router-dom";
 
 function User() {
   const [user, setUser] = useState({
@@ -46,7 +47,7 @@ function User() {
   }
   return (
     <div className="flex flex-col justify-center py-5 px-10 items-center gap-5">
-      <h1 className="font-bold text-3xl">GitHub API Rest Users:</h1>
+      <Link to={`/`} className="font-bold text-3xl">GitHub API Rest Users:</Link>
       <h2 className="font-bold text-2xl">User</h2>
       <div id="user">
         <p>Id: {user.id}</p>
